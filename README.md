@@ -42,7 +42,7 @@ The sample log uses IP addresses from ranges reserved for documentation
 ## Limitations
 
 - Distributed attacks: Detection is IP-based, so an attacker who spreads attempts across many IPs (for example, a botnet) can keep each IP under the threshold.
-- Low-and-slow attacks: one sentence: An attacker who spaces attempts more than a few minutes apart never gets 5 failures inside one 10-minute window.
+- Low-and-slow attacks: An attacker who spaces attempts more than a few minutes apart never gets 5 failures inside one 10-minute window.
 - Linux auth logs omit the year, so the tool assumes every entry is from 2026. Logs from other years show incorrect dates, and logs that span New Year’s can produce wrong time calculations.
 - The tool only reads a file named auth.log in the same folder. To analyze a different log, a user must rename their file or edit the code. A future version would accept the file path as a command-line argument.
 
